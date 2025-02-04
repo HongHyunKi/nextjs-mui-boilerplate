@@ -1,17 +1,23 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 설명
+    "@mui/material": "7.0.0-alpha.0",
+    "@mui/material-nextjs": "7.0.0-alpha.0",
+    "next": "15.1.6",
+    "react": "19.0.0",
 
+Nextjs 15버전을 기념하며
+MUI 7.0.0-alpha의 깃허브 샘플 프로젝트를 토대로 만든 보일러플레이트입니다.
+MUI 테마 (system, dark, light)와 prettier만 적용되어 있습니다.
+---
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
+# install
+yarn install
+# run
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
