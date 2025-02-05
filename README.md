@@ -1,4 +1,3 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 ## 설명
     "@mui/material": "7.0.0-alpha.0",
     "@mui/material-nextjs": "7.0.0-alpha.0",
@@ -9,6 +8,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 MUI 테마 (system, dark, light)와 prettier만 적용되어 있습니다.
 
 ---
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
 ## Getting Started
 
 First, run the development server:
