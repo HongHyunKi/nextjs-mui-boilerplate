@@ -5,7 +5,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
     "next": "15.1.6",
     "react": "19.0.0",
 
-Nextjs 15버전을 기념하며
 MUI 7.0.0-alpha의 깃허브 샘플 프로젝트를 토대로 만든 보일러플레이트입니다.
 MUI 테마 (system, dark, light)와 prettier만 적용되어 있습니다.
 ---
