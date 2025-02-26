@@ -9,64 +9,135 @@ const plus = Roboto({
 });
 
 const theme = createTheme({
-  colorSchemes: { light: true, dark: true },
+  colorSchemes: {
+    /* Light 테마 */
+    light: {
+      palette: {
+        mode: "light",
+        primary: {
+          main: "#5D87FF",
+          light: "#ECF2FF",
+          dark: "#4570EA",
+        },
+        secondary: {
+          main: "#49BEFF",
+          light: "#E8F7FF",
+          dark: "#23afdb",
+        },
+        success: {
+          main: "#13DEB9",
+          light: "#E6FFFA",
+          dark: "#02b3a9",
+          contrastText: "#ffffff",
+        },
+        info: {
+          main: "#539BFF",
+          light: "#EBF3FE",
+          dark: "#1682d4",
+          contrastText: "#ffffff",
+        },
+        error: {
+          main: "#fa6b6b",
+          light: "#FDEDE8",
+          dark: "#f3704d",
+          contrastText: "#ffffff",
+        },
+        warning: {
+          main: "#FFAE1F",
+          light: "#FEF5E5",
+          dark: "#ae8e59",
+          contrastText: "#ffffff",
+        },
+        grey: {
+          100: "#F2F6FA",
+          200: "#EAEFF4",
+          300: "#DFE5EF",
+          400: "#7C8FAC",
+          500: "#5A6A85",
+          600: "#2A3547",
+        },
+        text: {
+          primary: "#2A3547",
+          secondary: "#5A6A85",
+        },
+        background: {
+          default: "#fff",
+          paper: "#fff",
+        },
+        divider: "#e5eaef",
+        action: {
+          disabledBackground: "rgba(73,82,88,0.12)",
+          hoverOpacity: 0.02,
+          hover: "#f6f9fc",
+        },
+      },
+    },
+
+    /* Dark 테마 */
+    dark: {
+      palette: {
+        mode: "dark",
+        primary: {
+          main: "#5D87FF",
+          light: "#4570EA",
+          dark: "#1A3FA4",
+        },
+        secondary: {
+          main: "#49BEFF",
+          light: "#23afdb",
+          dark: "#1769aa",
+        },
+        success: {
+          main: "#13DEB9",
+          light: "#028080",
+          dark: "#015F5F",
+          contrastText: "#ffffff",
+        },
+        info: {
+          main: "#539BFF",
+          light: "#1682d4",
+          dark: "#0A57A4",
+          contrastText: "#ffffff",
+        },
+        error: {
+          main: "#fa6b6b",
+          light: "#b34040",
+          dark: "#7A2525",
+          contrastText: "#ffffff",
+        },
+        warning: {
+          main: "#FFAE1F",
+          light: "#ae8e59",
+          dark: "#845B10",
+          contrastText: "#ffffff",
+        },
+        grey: {
+          100: "#2A2D3A",
+          200: "#1E1E1E",
+          300: "#121212",
+          400: "#8A8F98",
+          500: "#6E7681",
+          600: "#525861",
+        },
+        text: {
+          primary: "#E0E0E0",
+          secondary: "#B0BEC5",
+        },
+        background: {
+          default: "#121212",
+          paper: "#121212",
+        },
+        action: {
+          disabledBackground: "rgba(255, 255, 255, 0.12)",
+          hoverOpacity: 0.05,
+          hover: "#2A2D3A",
+        },
+        divider: "#333845",
+      },
+    },
+  },
   cssVariables: {
     colorSchemeSelector: "class",
-  },
-  palette: {
-    mode: "light",
-    primary: {
-      main: "#5D87FF",
-      light: "#ECF2FF",
-      dark: "#4570EA",
-    },
-    secondary: {
-      main: "#49BEFF",
-      light: "#E8F7FF",
-      dark: "#23afdb",
-    },
-    success: {
-      main: "#13DEB9",
-      light: "#E6FFFA",
-      dark: "#02b3a9",
-      contrastText: "#ffffff",
-    },
-    info: {
-      main: "#539BFF",
-      light: "#EBF3FE",
-      dark: "#1682d4",
-      contrastText: "#ffffff",
-    },
-    error: {
-      main: "#fa6b6b",
-      light: "#FDEDE8",
-      dark: "#f3704d",
-      contrastText: "#ffffff",
-    },
-    warning: {
-      main: "#FFAE1F",
-      light: "#FEF5E5",
-      dark: "#ae8e59",
-      contrastText: "#ffffff",
-    },
-    grey: {
-      100: "#F2F6FA",
-      200: "#EAEFF4",
-      300: "#DFE5EF",
-      400: "#7C8FAC",
-      500: "#5A6A85",
-      600: "#2A3547",
-    },
-    text: {
-      primary: "#2A3547",
-      secondary: "#5A6A85",
-    },
-    action: {
-      disabledBackground: "rgba(73,82,88,0.12)",
-      hoverOpacity: 0.02,
-      hover: "#f6f9fc",
-    },
-    divider: "#e5eaef",
   },
   typography: {
     fontFamily: plus.style.fontFamily,
@@ -145,6 +216,28 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: "7px",
+        },
+      },
+    },
+    /* background-image: var(--Paper-overlay); 제거 */
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          backgroundImage: "none !important",
+        },
+      },
+    },
+    MuiMenu: {
+      styleOverrides: {
+        paper: {
+          backgroundImage: "none !important",
+        },
+      },
+    },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          backgroundImage: "none !important",
         },
       },
     },
