@@ -1,10 +1,19 @@
 import * as React from "react";
+import type { Metadata } from "next";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import theme from "@/theme";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
-import ModeSwitch from "@/components/ModeSwitch";
+import theme from "@/theme";
+
+// 메타데이터 템플릿
+export const metadata: Metadata = {
+  title: {
+    template: "%s | My App",
+    default: "My Project",
+  },
+  description: "The Best Project",
+};
 
 export default function RootLayout({
   children,
@@ -18,7 +27,6 @@ export default function RootLayout({
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            <ModeSwitch />
             {children}
           </ThemeProvider>
         </AppRouterCacheProvider>
