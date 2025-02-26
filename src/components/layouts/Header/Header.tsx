@@ -3,7 +3,7 @@ import * as React from "react";
 import { Box, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Stack } from "@mui/system";
-import { HEADER_HEIGHT } from "@/app/constants";
+import { HEADER_HEIGHT } from "@/constants";
 import ProfileButton from "@/components/layouts/Header/ProfileButton";
 import ThemeModeSwitch from "@/components/common/ThemeModeSwitch";
 

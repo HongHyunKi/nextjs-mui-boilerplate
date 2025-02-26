@@ -2,7 +2,7 @@
 import * as React from "react";
 import { Drawer, Theme } from "@mui/material";
 import { useMediaQuery } from "@mui/system";
-import { SIDEBAR_WIDTH } from "@/app/constants";
+import { SIDEBAR_WIDTH } from "@/constants";
 import SidebarItems from "@/components/layouts/Sidebar/SidebarItems";
 
 // Custom CSS for short scrollbar

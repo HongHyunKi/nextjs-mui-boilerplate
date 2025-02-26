@@ -3,11 +3,11 @@ import * as React from "react";
 import { styled } from "@mui/material";
 import Container from "@mui/material/Container";
 import { useState } from "react";
-import { SIDEBAR_WIDTH } from "@/app/constants";
+import { SIDEBAR_WIDTH } from "@/constants";
 import Sidebar from "@/components/layouts/Sidebar/Sidebar";
 import Header from "@/components/layouts/Header/Header";
 
-const MainWrapper = styled("div")(() => ({
+const BoardWrapper = styled("div")(() => ({
   display: "flex",
   minHeight: "100vh",
   width: "100%",
@@ -24,7 +24,7 @@ const PageWrapper = styled("div")(() => ({
   display: "flex",
   flexDirection: "column",
   flexGrow: 1,
-  backgroundColor: "#F4F7FE", // 임시 색상
+  // backgroundColor: "#F4F7FE", // 임시 색상
   paddingBottom: "84px",
 }));
 
@@ -44,7 +44,7 @@ export default function BoardLayout({
   };
 
   return (
-    <MainWrapper>
+    <BoardWrapper>
       <SidebarWrapper>
         <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
       </SidebarWrapper>
@@ -52,6 +52,6 @@ export default function BoardLayout({
         <Header toggleSidebar={toggleSidebar} />
         <Container sx={{ maxWidth: "1200px" }}>{children}</Container>
       </PageWrapper>
-    </MainWrapper>
+    </BoardWrapper>
   );
 }
