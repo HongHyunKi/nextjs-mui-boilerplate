@@ -4,7 +4,6 @@ import { List } from "@mui/material";
 import SpaceDashboardOutlinedIcon from "@mui/icons-material/SpaceDashboardOutlined";
 import FormatSizeOutlinedIcon from "@mui/icons-material/FormatSizeOutlined";
 import ViewAgendaOutlinedIcon from "@mui/icons-material/ViewAgendaOutlined";
-import LoginOutlinedIcon from "@mui/icons-material/LoginOutlined";
 import NavGroup from "@/components/layouts/Sidebar/NavGroup";
 import NavItem from "@/components/layouts/Sidebar/NavItem";
 
