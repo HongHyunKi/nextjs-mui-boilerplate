@@ -45,16 +45,6 @@ const MENU_ITEMS: MenuItem[] = [
     icon: <ViewAgendaOutlinedIcon />,
     href: "/utilities/card",
   },
-  {
-    navlabel: true,
-    subheader: "Auth",
-  },
-  {
-    id: 4,
-    title: "Login",
-    icon: <LoginOutlinedIcon />,
-    href: "/login",
-  },
 ];
 
 const SidebarItems = () => {
